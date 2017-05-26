@@ -1,0 +1,43 @@
+<PISI>
+    <Source>
+        <Name>python-faulthandler</Name>
+        <Packager>
+            <Name>Federico Damián Schonborn</Name>
+            <Email>federicodamiansch@gmail.com</Email>
+        </Packager>
+        <License>BSD-2-Clause</License>
+        <PartOf>programming.python</PartOf>
+        <Summary xml:lang="en">Fault handler for SIGSEGV, SIGFPE, SIGABRT, SIGBUS and SIGILL signals</Summary>
+        <Description xml:lang="en">Fault handler for SIGSEGV, SIGFPE, SIGABRT, SIGBUS and SIGILL signals: display the Python
+traceback and restore the previous handler. Allocate an alternate stack for this handler, if
+sigaltstack() is available, to be able to allocate memory on the stack, even on stack overflow.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>python-faulthandler</Name>
+        <Summary xml:lang="en">Fault handler for SIGSEGV, SIGFPE, SIGABRT, SIGBUS and SIGILL signals</Summary>
+        <Description xml:lang="en">Fault handler for SIGSEGV, SIGFPE, SIGABRT, SIGBUS and SIGILL signals: display the Python
+traceback and restore the previous handler. Allocate an alternate stack for this handler, if
+sigaltstack() is available, to be able to allocate memory on the stack, even on stack overflow.
+</Description>
+        <PartOf>programming.python</PartOf>
+        <Files>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/faulthandler-2.6-py2.7.egg-info/PKG-INFO</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/faulthandler-2.6-py2.7.egg-info/SOURCES.txt</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/faulthandler-2.6-py2.7.egg-info/dependency_links.txt</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/faulthandler-2.6-py2.7.egg-info/top_level.txt</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/faulthandler.pth</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/faulthandler.so</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2017-05-25</Date>
+            <Version>2.6</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Federico Damián Schonborn</Name>
+            <Email>federicodamiansch@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

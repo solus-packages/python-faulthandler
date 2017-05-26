@@ -1,0 +1,18 @@
+name       : python-faulthandler
+version    : 2.6
+release    : 1
+source     :
+    - https://pypi.python.org/packages/08/70/861aa647601cf1006f0d9b8ce1d17c37789d7637783eff8aacac4ed36ed6/faulthandler-2.6.tar.gz : 59487773e0189d6236ec694af53ac1fe564ec4a6d9593818deadd9afe4c0dc7f
+license    : BSD-2-Clause
+component  : programming.python
+summary    : Fault handler for SIGSEGV, SIGFPE, SIGABRT, SIGBUS and SIGILL signals
+description: |
+    Fault handler for SIGSEGV, SIGFPE, SIGABRT, SIGBUS and SIGILL signals: display the Python
+    traceback and restore the previous handler. Allocate an alternate stack for this handler, if
+    sigaltstack() is available, to be able to allocate memory on the stack, even on stack overflow.
+builddeps  :
+    - python-setuptools
+build      : |
+    %python_setup
+install    : |
+    %python_install
